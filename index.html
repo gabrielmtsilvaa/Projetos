@@ -4,23 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card de Perfil</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
-    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            background-color: #1f1f1f;
+            border-radius: 16px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 16px;
+        }
+
+        .card h1 {
+            font-size: 1.5rem;
+            color: #fff;
+            margin: 0;
+        }
+
+        .card h2 {
+            font-size: 1rem;
+            color: #a3ffa3;
+            margin: 8px 0;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            display: block;
+            text-decoration: none;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .card a.github {
+            background-color: #b8ff47;
+            color: #000;
+        }
+
+        .card a.default {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .card a:hover {
+            filter: brightness(1.2);
+        }
+    </style>
 </head>
 <body>
     <div class="card">
-        <img src="WhatsApp Image 2025-01-29 at 09.29.15.png" alt="Foto de Perfil">
-        <h1>Gabriel Matos</h1>
-        <h2>Itabi,Brazil/Se</h2>
+        <img src="avatar-jessica.jpeg" alt="Foto de Perfil">
+        <h1>Jessica Randall</h1>
+        <h2>London, United Kingdom</h2>
         <p>"Front-end developer and avid reader."</p>
-        <a href="https://x.com/gabrielmtsilvaa" class="github">GitHub</a>
-        <a href="https://www.linkedin.com/in/gabriel-matos-60192b309/" class="default">LinkedIn</a>
-        <a href="https://www.frontendmentor.io/profile/gabrielmtsilvaa" class="default">Front-end Mentor</a>
-        <a href="https://x.com/gabrielmtsilvaa" class="default">Twitter</a>
-        <a href="https://www.instagram.com/gabrielmtsilvaa/" class="default">Instagram</a>
+        <a href="#" class="github">GitHub</a>
+        <a href="#" class="default">Frontend Mentor</a>
+        <a href="#" class="default">LinkedIn</a>
+        <a href="#" class="default">Twitter</a>
+        <a href="#" class="default">Instagram</a>
     </div>
 </body>
 </html>
